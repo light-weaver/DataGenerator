@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "datagenerator"
+version = "0.1.0"
+description = "Generate data from benchmark and engineering problems"
+authors = ["Bhupinder Saini"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+numpy = "^1.16"
+pandas = "^0.24.2"
+pydoe = "^0.3.8"
+optproblems = "^1.2"
+diversipy = "^0.8.0"
+tqdm = "^4.32"
+
+
+[tool.poetry.dev-dependencies]
+black = {version = "^18.3-alpha.0",allows-prereleases = true}
+flake8 = "^3.7"
+pylint = "^2.3"
+sphinx = "^2.1"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
